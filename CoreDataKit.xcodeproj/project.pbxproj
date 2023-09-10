@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04CE87502AAC2EEB006EE293 /* CoreDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CE874F2AAC2EEB006EE293 /* CoreDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04CE87572AAC2F50006EE293 /* CDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87562AAC2F50006EE293 /* CDRepository.swift */; };
+		04CE875A2AAC330A006EE293 /* CDSortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87592AAC330A006EE293 /* CDSortDescriptor.swift */; };
+		04CE875E2AAC3498006EE293 /* CDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE875D2AAC3498006EE293 /* CDStack.swift */; };
+		04CE87622AAC370C006EE293 /* CDConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87612AAC370C006EE293 /* CDConfiguration.swift */; };
+		04CE87642AAD8C1E006EE293 /* CDPredicateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87632AAD8C1E006EE293 /* CDPredicateBuilder.swift */; };
+		04CE87662AAD8EC4006EE293 /* CDPredicateBuilderLogicalOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87652AAD8EC4006EE293 /* CDPredicateBuilderLogicalOperator.swift */; };
+		04CE87682AAD8FCC006EE293 /* CDPredicateOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87672AAD8FCC006EE293 /* CDPredicateOperator.swift */; };
+		04CE876A2AAD99D3006EE293 /* CDEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE87692AAD99D3006EE293 /* CDEntityManager.swift */; };
+		04E805332AADA704004C6AAD /* CDPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E805322AADA704004C6AAD /* CDPagination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04CE874C2AAC2EEB006EE293 /* CoreDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04CE874F2AAC2EEB006EE293 /* CoreDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataKit.h; sourceTree = "<group>"; };
+		04CE87562AAC2F50006EE293 /* CDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRepository.swift; sourceTree = "<group>"; };
+		04CE87592AAC330A006EE293 /* CDSortDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSortDescriptor.swift; sourceTree = "<group>"; };
+		04CE875D2AAC3498006EE293 /* CDStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDStack.swift; sourceTree = "<group>"; };
+		04CE87612AAC370C006EE293 /* CDConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDConfiguration.swift; sourceTree = "<group>"; };
+		04CE87632AAD8C1E006EE293 /* CDPredicateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPredicateBuilder.swift; sourceTree = "<group>"; };
+		04CE87652AAD8EC4006EE293 /* CDPredicateBuilderLogicalOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPredicateBuilderLogicalOperator.swift; sourceTree = "<group>"; };
+		04CE87672AAD8FCC006EE293 /* CDPredicateOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPredicateOperator.swift; sourceTree = "<group>"; };
+		04CE87692AAD99D3006EE293 /* CDEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEntityManager.swift; sourceTree = "<group>"; };
+		04E805322AADA704004C6AAD /* CDPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPagination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +61,41 @@
 		04CE874E2AAC2EEB006EE293 /* CoreDataKit */ = {
 			isa = PBXGroup;
 			children = (
-				04CE874F2AAC2EEB006EE293 /* CoreDataKit.h */,
+				04CE87602AAC360A006EE293 /* Classes */,
+				04CE875F2AAC35FA006EE293 /* Enums */,
+				04CE87582AAC32FB006EE293 /* Structs */,
 			);
 			path = CoreDataKit;
+			sourceTree = "<group>";
+		};
+		04CE87582AAC32FB006EE293 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				04CE87612AAC370C006EE293 /* CDConfiguration.swift */,
+				04E805322AADA704004C6AAD /* CDPagination.swift */,
+				04CE87592AAC330A006EE293 /* CDSortDescriptor.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		04CE875F2AAC35FA006EE293 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				04CE87672AAD8FCC006EE293 /* CDPredicateOperator.swift */,
+				04CE87652AAD8EC4006EE293 /* CDPredicateBuilderLogicalOperator.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		04CE87602AAC360A006EE293 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04CE87692AAD99D3006EE293 /* CDEntityManager.swift */,
+				04CE87632AAD8C1E006EE293 /* CDPredicateBuilder.swift */,
+				04CE87562AAC2F50006EE293 /* CDRepository.swift */,
+				04CE875D2AAC3498006EE293 /* CDStack.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -57,7 +105,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CE87502AAC2EEB006EE293 /* CoreDataKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +140,7 @@
 				TargetAttributes = {
 					04CE874B2AAC2EEB006EE293 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -129,6 +177,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E805332AADA704004C6AAD /* CDPagination.swift in Sources */,
+				04CE87682AAD8FCC006EE293 /* CDPredicateOperator.swift in Sources */,
+				04CE87662AAD8EC4006EE293 /* CDPredicateBuilderLogicalOperator.swift in Sources */,
+				04CE87642AAD8C1E006EE293 /* CDPredicateBuilder.swift in Sources */,
+				04CE87572AAC2F50006EE293 /* CDRepository.swift in Sources */,
+				04CE875E2AAC3498006EE293 /* CDStack.swift in Sources */,
+				04CE876A2AAD99D3006EE293 /* CDEntityManager.swift in Sources */,
+				04CE875A2AAC330A006EE293 /* CDSortDescriptor.swift in Sources */,
+				04CE87622AAC370C006EE293 /* CDConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +310,7 @@
 		04CE87542AAC2EEB006EE293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -264,7 +322,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -273,7 +331,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
@@ -283,6 +341,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,6 +350,7 @@
 		04CE87552AAC2EEB006EE293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -302,7 +362,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -311,7 +371,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
